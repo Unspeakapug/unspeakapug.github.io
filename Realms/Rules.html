@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Rules - Puggy Bot</title>
+<style>
+:root {
+  --bg: #12121d;
+  --text: #ffffff;
+  --accent1: #6366f1;
+  --accent2: #4f46e5;
+  --card: rgba(255,255,255,0.05);
+  --card-hover: rgba(99,102,241,0.1);
+  --shadow: rgba(0,0,0,0.5);
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+a { color: var(--accent1); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* Taskbar */
+.taskbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #1e1f29;
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  z-index: 1000;
+  box-shadow: 0 2px 12px var(--shadow);
+}
+.taskbar a {
+  padding: 8px 16px;
+  background: #1c1d28;
+  border-radius: 8px;
+  font-weight: bold;
+  color: var(--accent1);
+  transition: 0.3s;
+}
+.taskbar a:hover {
+  background: #2c2f33;
+  color: #fff;
+}
+
+/* Main container */
+.container {
+  max-width: 1000px;
+  margin: 120px auto 50px;
+  padding: 30px;
+  background: var(--card);
+  border-radius: 16px;
+  box-shadow: 0 10px 30px var(--shadow);
+}
+
+/* Title */
+h1 {
+  text-align: center;
+  color: var(--accent1);
+  font-size: 2.8rem;
+  margin-bottom: 10px;
+}
+
+/* Section Title */
+.section-title {
+  color: var(--accent1);
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+/* Info Boxes */
+.info-box {
+  background: rgba(99,102,241,0.05);
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  border-left: 4px solid var(--accent2);
+}
+
+/* Lists */
+ul {
+  list-style: disc;
+  padding-left: 20px;
+}
+li {
+  margin: 8px 0;
+  font-size: 1.1rem;
+}
+
+/* Section wrapper */
+.rules-section {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+/* Individual box */
+.rules-box {
+  background: var(--card);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px var(--shadow);
+  transition: 0.3s;
+}
+.rules-box:hover {
+  background: var(--card-hover);
+}
+</style>
+</head>
+<body>
+
+<div class="taskbar">
+  <a href="../index.html">Home</a>
+  <a href="Changelog.html">Changelogs</a>
+  <a href="../General/Doog.html">The Doog</a>
+  <a href="../General/puggyrealm.html">Puggy Realm</a>
+  <a href="../General/Puggy.html">Puggy Bot</a>
+</div>
+
+<div class="container">
+  <h1>Rules</h1>
+  <p>Here, the rules for the Realms and the Discord server are listed. If you are looking for the Bot TOS and Privacy Policy, please visit the Puggy Bot page.</p>
+
+  <div class="rules-section">
+    <div class="rules-box">
+      <h2 class="section-title">Realm Rules</h2>
+      <div class="info-box">
+        These rules apply to everyone including staff. If someone is breaking these rules please notify staff through a ticket in the Discord server! These rules apply to both Realms and all parts of the Realms:
+      </div>
+      <ul>
+        <li>No spamming or spawn killing players</li>
+        <li>No lag machines or purposefully spawning a bunch of entities to lag the servers</li>
+        <li>No trespassing in, stealing from, or griefing people's plots/islands</li>
+        <li>Do not use invisible skins or skins that will give you an advantage over others</li>
+        <li>Don't beg for items or operator</li>
+        <li>Don't spam in chat, share realm codes/private info, or send inappropriate messages</li>
+        <li>Exploits, hacks, cheats, or other related things will result in a ban. This includes abusing glitches</li>
+      </ul>
+    </div>
+
+    <div class="rules-box">
+      <h2 class="section-title">Discord Server Rules</h2>
+      <div class="info-box">
+        These rules apply to all people including staff. If anyone is breaking these rules please ping staff immediately. These rules can be viewed in the rules channel or by typing !rules in the Discord Server.
+      </div>
+      <ul>
+        <li>Follow Discord's Terms of Service and listen to staff</li>
+        <li>Respect and be kind to other people</li>
+        <li>No advertising or sharing realm codes/private info</li>
+        <li>Have common sense; no trolling or annoying others</li>
+        <li>Use channels for their intended purposes</li>
+        <li>Don't spam or be inappropriate</li>
+        <li>Don't steal others content. Ask permission before downloading or using others work</li>
+        <li>Don't excessively ping anyone or try to ping @everyone</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

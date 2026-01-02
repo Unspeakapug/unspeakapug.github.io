@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Puggy Realm - Shops</title>
+<style>
+:root {
+  --bg: #12121d;
+  --text: #ffffff;
+  --accent1: #6366f1;
+  --accent2: #4f46e5;
+  --card: rgba(255,255,255,0.05);
+  --card-hover: rgba(99,102,241,0.1);
+  --shadow: rgba(0,0,0,0.5);
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+/* Taskbar */
+.taskbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #1e1f29;
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  z-index: 1000;
+  box-shadow: 0 2px 12px var(--shadow);
+}
+
+.taskbar a {
+  padding: 8px 16px;
+  background: #1c1d28;
+  border-radius: 8px;
+  font-weight: bold;
+  color: var(--accent1);
+  transition: 0.3s;
+}
+
+.taskbar a:hover {
+  background: #2c2f33;
+  color: #fff;
+}
+
+/* Main container */
+.container {
+  max-width: 1000px;
+  margin: 120px auto 50px;
+  padding: 30px;
+  background: var(--card);
+  border-radius: 16px;
+  box-shadow: 0 10px 30px var(--shadow);
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* Title */
+h1 {
+  text-align: center;
+  color: var(--accent1);
+  font-size: 2.8rem;
+  margin-bottom: 10px;
+}
+
+/* Intro paragraph */
+.container p {
+  text-align: center;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* Section Titles */
+.section-title {
+  color: var(--accent1);
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+/* Info Boxes / Lists */
+.info-box {
+  background: rgba(99,102,241,0.05);
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  border-left: 4px solid var(--accent2);
+}
+
+/* Shop Grid */
+.shop-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+/* Individual Shop Items */
+.shop-item {
+  background: var(--card);
+  border: 2px solid var(--accent1);
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  transition: background 0.3s, border-color 0.3s;
+}
+
+.shop-item:hover {
+  background: var(--card-hover);
+  border-color: var(--accent2);
+}
+
+.shop-item h3 {
+  color: var(--accent1);
+  margin-bottom: 10px;
+}
+
+.shop-item p {
+  color: var(--text);
+  font-size: 1rem;
+}
+
+ul {
+  list-style: disc;
+  padding-left: 20px;
+}
+
+li {
+  margin: 8px 0;
+  font-size: 1.1rem;
+}
+</style>
+</head>
+<body>
+
+<div class="taskbar">
+  <a href="../index.html">Home</a>
+  <a href="Changelog.html">Changelogs</a>
+  <a href="../General/Doog.html">The Doog</a>
+  <a href="../General/puggyrealm.html">Puggy Realm</a>
+  <a href="../General/Puggy.html">Puggy Bot</a>
+</div>
+
+<div class="container">
+  <h1>Puggy Realm Shop</h1>
+  <p>
+    Welcome to the shop! Here, you can sell ores and purchase hundreds of different items from kits to mayfly and ranks! Some ranks give you quicker sell speeds to allow you to sell ore even quicker!
+  </p>
+
+  <div class="info-box">
+    <h2 class="section-title">What You Can Sell</h2>
+    <ul>
+      <li><strong>Diamonds:</strong> Sells for 45$ per diamond</li>
+      <li><strong>Diamond Blocks:</strong> Sells for 360$ per block</li>
+      <li><strong>Iron Ingots:</strong> Sells for 20$ per ingot</li>
+      <li><strong>Iron Blocks:</strong> Sells for 180$ per block</li>
+      <li><strong>Gold Ingots:</strong> Sells for 10$ per ingot</li>
+      <li><strong>Gold Blocks:</strong> Sells for 100$ per block</li>
+      <li><strong>Emeralds:</strong> Sells for 35$ per emerald</li>
+      <li><strong>Emerald Blocks:</strong> Sells for 120$ per block</li>
+      <li><strong>Netherite Ingots:</strong> Sells for 250$ per ingot</li>
+      <li><strong>Netherite Blocks:</strong> Sells for 2,250$ per block</li>
+      <li><strong>Copper Ingots:</strong> Sells for 16$ per ingot</li>
+      <li><strong>Copper Blocks:</strong> Sells for 65$ per block</li>
+      <li><strong>Lapis Lazuli:</strong> Sells for 5$ per lapis</li>
+      <li><strong>Lapis Lazuli Blocks:</strong> Sells for 45$ per block</li>
+      <li><strong>Redstone:</strong> Sells for 5$ per redstone</li>
+      <li><strong>Redstone Blocks:</strong> Sells for 45$ per block</li>
+      <li><strong>Quartz:</strong> Sells for 25$ per quartz</li>
+      <li><strong>Quartz Blocks:</strong> Sells for 125$ per block</li>
+      <li><strong>Element 1 (Hydrogen):</strong> Sells for 100$ per block</li>
+      <li><strong>Armadillo Scute:</strong> Sells for 15$ per scute</li>
+    </ul>
+  </div>
+
+  <h2 class="section-title">Purchase Shops</h2>
+  <div class="shop-grid">
+    <div class="shop-item">
+      <a href="realmkitshop.html" style="text-decoration:none;color:inherit;">
+        <h3>Kit Shop</h3>
+        <p>Browse a selection of different types of kits from god kits with 32k enchants (restricted to mvp++ users) to kits that are specifically for decorating your plot</p>
+      </a>
+    </div>
+     <div class="shop-item">
+      <a href="normal-shop.html" style="text-decoration:none;color:inherit;">
+        <h3>Normal Shop</h3>
+        <p>Purchase cool items without categories or plot upgrades to make your plot better than ever</p>
+      </a>
+    </div>
+    <div class="shop-item">
+      <a href="realmrankshop.html" style="text-decoration:none;color:inherit;">
+        <h3>Rank Shop</h3>
+        <p>Purchase ranks that provide access to different rank areas, commands with the Puggy Bot, and more</p>
+      </a>
+    </div>
+    <div class="shop-item">
+      <a href="particle-shop.html" style="text-decoration:none;color:inherit;">
+        <h3>Particle Shop</h3>
+        <p>Purchase particle effects that either work as trails or can be placed on your plot where you'd like</p>
+      </a>
+    </div>
+    <div class="shop-item">
+      <a href="emote-shop.html" style="text-decoration:none;color:inherit;">
+        <h3>Emote Shop</h3>
+        <p>Purchase emotes that you can activate whenever you'd like</p>
+      </a>
+    </div>
+    <div class="shop-item">
+      <a href="sound-shop.html" style="text-decoration:none;color:inherit;">
+        <h3>Sound Shop</h3>
+        <p>Purchase cool sounds that can be played at any time in your plot or to you only.</p>
+      </a>
+    </div>
+    <div class="shop-item">
+      <a href="bank.html" style="text-decoration:none;color:inherit;">
+        <h3>Bank</h3>
+        <p>Transfer money to other users or take out loans to help you get started</p>
+      </a>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
